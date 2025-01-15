@@ -2,39 +2,7 @@ package ex_curs;
 import java.sql.*;
 
 public class MainAppp {
-    /*public static void main(String[] args) throws SQLException{
-        String url = "jdbc:mysql://localhost:3306/test";
-        String sql ="select * from persoanee";
-        Connection connection= DriverManager.getConnection(url, "root", "root");
-        Statement statement = connection.createStatement();
-        ResultSet rs = statement.executeQuery(sql);
-        while (rs.next())
-            System.out.println("id=" + rs.getInt("Id") + ", nume= "
-                    + rs.getString("nume") + ",varsta=" + rs.getInt("varsta"));
-        connection.close();
-        statement.close();
-        rs.close();
-    }*/
-
-    /*public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/test";
-        String sql="select * from persoanee where nume=? and varsta<?";
-        try {
-            Connection connection = DriverManager.getConnection (url, "root", "root");
-            PreparedStatement ps=connection.prepareStatement(sql);
-            ps.setString(1, "Vladut");
-            ps.setInt(2, 18);
-            ResultSet rs = ps.executeQuery();
-            while (rs.next())
-                System.out.println("id="+rs.getInt(1)+", nume= " + rs.getString(2)
-                        + ", varsta="+rs.getInt(3));
-            connection.close();
-            ps.close();
-            rs.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }*/
+   
     public static void afisare_tabela(Statement statement, String mesaj) {
         String sql ="select * from persoanee";
         System.out.println("\n---" +mesaj +"---");
