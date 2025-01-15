@@ -1,7 +1,7 @@
 package ex_curs;
 import java.sql.*;
 
-public class MainAppp {
+public class MainApp {
    
     public static void afisare_tabela(Statement statement, String mesaj) {
         String sql ="select * from persoanee";
