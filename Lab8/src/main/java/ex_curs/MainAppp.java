@@ -94,7 +94,7 @@ public class MainApp {
             afisare_tabela(statement,"Dupa adaugare");
 
             System.out.println("Adaugare persoana");
-            adaugarePers(connection,"Bianca",45);
+            adaugarePers(connection,"Ana",45);
             afisare_tabela(statement,"Dupa adaugare");
 
             actualizare(connection,4,24);
